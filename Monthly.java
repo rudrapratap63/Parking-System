@@ -9,4 +9,3 @@ class Monthly extends Pass {
         return "Monthly";
     }
 }
-
