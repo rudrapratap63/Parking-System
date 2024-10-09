@@ -8,4 +8,3 @@ class Faculty extends User{
        return "Faculty" ;
    }
 }
-
