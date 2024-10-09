@@ -6,5 +6,4 @@ abstract class Vehicle{
     Vehicle(){
         this.id = null;
     }
-
 }

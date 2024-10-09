@@ -1,13 +1,10 @@
-public class Student extends User{
-        String studentId;
-        Student(String name,String contact, String studentId){
-        super(name,contact);
+public class Student extends User {
+    String studentId;
+    Student(String name, String contact, String studentId) {
+        super(name, contact);
         this.studentId = studentId;
-        }
-
-public String getRole()
-{
+    }
+    public String getRole() {
         return "Student";
-        }
-
-        }
+    }
+}

@@ -8,5 +8,4 @@ class Annually extends Pass{
     public String type(){
         return "Annually";
     }
-
 }

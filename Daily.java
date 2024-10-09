@@ -8,5 +8,4 @@ public class Daily extends Pass{
     public String type(){
         return "Daily";
     }
-
 }

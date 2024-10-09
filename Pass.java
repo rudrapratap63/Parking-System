@@ -4,18 +4,11 @@ import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 abstract class Pass {
-    String duration ;
-    Pass(String duration){
-        this.duration = duration;
-    }
-    Pass(){
-        this.duration = null;
-    }
     public abstract String type();
     public abstract String getExpiryDate();
     public void generateReceipt(){
         {
-            Scanner scan = new Scanner(System.in);
+            Scanner input = new Scanner(System.in);
             String vehicleInfo;
             String durationInfo;
             User user;
@@ -25,36 +18,34 @@ abstract class Pass {
             String vehicleType;
             String duration;
             System.out.println(Constant.USER_NAME);
-            String name = scan.nextLine();
+            String name = input.nextLine();
             System.out.println(Constant.USER_ROLE);
-            String role = scan.nextLine();
+            String role = input.nextLine();
             if (role.equalsIgnoreCase("1")) {
                 System.out.println(Constant.ENTER_ID);
-                String id = scan.nextLine();
+                String id = input.nextLine();
                 System.out.println(Constant.ENTER_CONTACT);
-                String contact = scan.nextLine();
+                String contact = input.nextLine();
                 user = new Student(name, contact, id);
                 System.out.println(Constant.VEHICLE_TYPE);
-                vehicleType = scan.nextLine();
+                vehicleType = input.nextLine();
                 vehicleType = vehicleType.toLowerCase();
                 switch (vehicleType) {
-
                     case "1" -> {
                         System.out.println(Constant.INPUT_VEHICLE_ID);
-                        String identity = scan.nextLine();
+                        String identity = input.nextLine();
                         vehicle = new Cycle(identity);
                         vehicleInfo = "Cycle";
                     }
                     case "2" -> {
                         System.out.println(Constant.INPUT_VEHICLE_ID);
-                        String identity = scan.nextLine();
+                        String identity = input.nextLine();
                         vehicle = new Bike(identity);
                         vehicleInfo = "Bike";
-
                     }
                     case "3" -> {
                         System.out.println(Constant.INPUT_VEHICLE_ID);
-                        String identity = scan.nextLine();
+                        String identity = input.nextLine();
                         vehicle = new Car(identity);
                         vehicleInfo = "Car";
                     }
@@ -64,7 +55,7 @@ abstract class Pass {
                     }
                 }
                 System.out.println(Constant.DURATION);
-                duration = scan.nextLine();
+                duration = input.nextLine();
                 duration = duration.toLowerCase();
                 switch (duration){
                 case "1" -> {
@@ -89,31 +80,30 @@ abstract class Pass {
             }
             else if (role.equalsIgnoreCase("2")) {
                 System.out.println(Constant.ENTER_ID);
-                String id = scan.nextLine();
+                String id = input.nextLine();
                 System.out.println(Constant.ENTER_CONTACT);
-                String contact = scan.nextLine();
+                String contact = input.nextLine();
                 user = new Faculty(name, contact, id);
                 System.out.println(Constant.VEHICLE_TYPE);
-                vehicleType = scan.nextLine();
+                vehicleType = input.nextLine();
                 vehicleType = vehicleType.toLowerCase();
                 switch (vehicleType) {
-
                     case "1" -> {
                         System.out.println(Constant.INPUT_VEHICLE_ID);
-                        String identity = scan.nextLine();
+                        String identity = input.nextLine();
                         vehicle = new Cycle(identity);
                         vehicleInfo = "Cycle";
                     }
                     case "2" -> {
                         System.out.println(Constant.INPUT_VEHICLE_ID);
-                        String identity = scan.nextLine();
+                        String identity = input.nextLine();
                         vehicle = new Bike(identity);
                         vehicleInfo = "Bike";
 
                     }
                     case "3" -> {
                         System.out.println(Constant.INPUT_VEHICLE_ID);
-                        String identity = scan.nextLine();
+                        String identity = input.nextLine();
                         vehicle = new Car(identity);
                         vehicleInfo = "Car";
                     }
@@ -123,7 +113,7 @@ abstract class Pass {
                     }
                 }
                 System.out.println(Constant.DURATION);
-                duration = scan.nextLine();
+                duration = input.nextLine();
                 duration = duration.toLowerCase();
                 switch (duration) {
                     case "1" ->{

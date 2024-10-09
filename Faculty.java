@@ -1,4 +1,3 @@
-
 class Faculty extends User{
     String facultyId;
     Faculty(String name,String contact,String facultyId){
@@ -8,6 +7,5 @@ class Faculty extends User{
    public String getRole(){
        return "Faculty" ;
    }
-
 }
 
