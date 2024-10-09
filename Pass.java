@@ -142,17 +142,18 @@ abstract class Pass {
             System.out.println("======================================");
             System.out.println("              Receipt                 ");
             System.out.println("======================================");
+            System.out.println(Constant.START_DATE + LocalDate.now() + "       " Constant.CURRENT_TIME + currentTime);
+            System.out.println(Constant.END_DATE + pass.getExpiryDate());
             user.getInfo();
             System.out.println("Role: " + user.getRole());
             System.out.println("Amount to be Paid is: " + price);
             System.out.println(Constant.PASS_DURATION + durationInfo);
             System.out.println(Constant.VEHICLE + vehicleInfo);
             System.out.println(Constant.VEHICLE_ID + vehicle.id);
-            System.out.println(Constant.START_DATE + LocalDate.now());
-            System.out.println(Constant.CURRENT_TIME + currentTime );
-            System.out.println(Constant.END_DATE + pass.getExpiryDate());
+            // System.out.println(Constant.START_DATE + LocalDate.now());
+            // System.out.println(Constant.CURRENT_TIME + currentTime );
+            // System.out.println(Constant.END_DATE + pass.getExpiryDate());
             System.out.println("======================================");
-
         }
     }
     public static int price(String vehicleType, String duration){
