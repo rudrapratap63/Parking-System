@@ -3,5 +3,3 @@ class Cycle extends Vehicle {
         super(id);
     }
 }
-
-
