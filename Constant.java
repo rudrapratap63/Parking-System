@@ -6,13 +6,12 @@ public class Constant {
     static String ENTER_ID = "Please Enter User ID :";
     static String ENTER_CONTACT = "Please Enter User Contact :";
     static String INPUT_VEHICLE_ID = "Please Enter Vehicle ID :";
-    static String INVALID = "Sorry ! It is an Invalid Input !!";
+    static String INVALID_INPUT = "Sorry ! It is an Invalid Input !!";
     static String USER_NAME = "Please Enter Name of the User : " ;
     static String USER_ROLE = """
             PLEASE ENTER ROLE OF THE USER
             1 -> STUDENT
             2 -> FACULTY""";
-
     static String PASS_DURATION = "Duration : ";
     static String VEHICLE = "Vehicle is : ";
     static String VEHICLE_ID = "Vehicle Id is :";
@@ -30,5 +29,4 @@ public class Constant {
      1 -> CYCLE
      2 -> BIKE
      3 -> CAR""";
-
 }
