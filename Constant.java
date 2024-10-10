@@ -1,3 +1,8 @@
+/*
+In this class we are declaring the constants which we will be using in the other classes.
+This class will contain all the hard coded or the constant values.
+Contributors -> Jayant Singh, Ritika Suman , Rudra Pratap
+ */
 public class Constant {
     static int id = 1;
     static String USER_ID =  "User ID : ";
@@ -6,7 +11,7 @@ public class Constant {
     static String ENTER_ID = "Please Enter User ID :";
     static String ENTER_CONTACT = "Please Enter User Contact :";
     static String INPUT_VEHICLE_ID = "Please Enter Vehicle ID :";
-    static String INVALID = "Sorry ! It is an Invalid Input !!";
+    static String INVALID_INPUT = "Sorry ! It is an Invalid Input !!";
     static String USER_NAME = "Please Enter Name of the User : " ;
     static String USER_ROLE = """
             PLEASE ENTER ROLE OF THE USER

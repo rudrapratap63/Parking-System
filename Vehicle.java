@@ -1,3 +1,7 @@
+/*
+This is an abstract class serving 2 others classes, used to store vehicle id.
+Contributors -> Ritika Suman
+ */
 abstract class Vehicle{
     String id ;
     Vehicle(String id){
@@ -6,4 +10,5 @@ abstract class Vehicle{
     Vehicle(){
         this.id = null;
     }
+
 }
