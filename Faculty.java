@@ -9,3 +9,4 @@ class Faculty extends User{
    }
 }
 
+        
