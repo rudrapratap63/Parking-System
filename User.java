@@ -4,21 +4,31 @@ of the User
 Contributors -> Ojas Joshi
  */
 abstract class User {
-    int id ;
     String contact;
     String name;
-    User(String name,String contact){
-        this.id = Constant.id ;
+
+    /**
+     * Constructs a User with the specified name and contact information.
+     *
+     * @param name    the name of the user
+     * @param contact the contact information of the user
+     */
+    User(String name, String contact) {
         this.name = name;
         this.contact = contact;
     }
-    User(){
-        this.id = Constant.id;
-        this.name = null;
-    }
+
+    /**
+     * Displays the user's information, including their name and contact details.
+     */
     void getInfo() {
-        System.out.println(Constant.USER_ID+ Constant.id++ +Constant.NAME + name);
+        System.out.println(Constant.NAME + name);
         System.out.println(Constant.USER_CONTACT + contact);
     }
+
+    /**
+     * An abstract method that must be implemented by subclasses to return the role of the user.
+     * @return a String representing the role of the user
+     */
     public abstract String getRole();
 }

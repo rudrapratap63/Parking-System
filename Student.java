@@ -1,15 +1,28 @@
-/*
-This class is used to store studentId as well as username and contact and used tp
-know the role of User.
-Contributors -> Ojas Joshi
+/**
+  * This class is used to store the student ID, name, and contact information of a student
+  * Contributors -> Ojas Joshi
  */
 public class Student extends User {
-    String studentId;
-    Student(String name, String contact, String studentId) {
+    String id;
+
+    /**
+     * Constructs a Student with the specified name, contact information, and student ID.
+     *
+     * @param name    the name of the student
+     * @param contact the contact information of the student
+     * @param id      the student ID of the student
+     */
+    Student(String name, String contact, String id) {
         super(name, contact);
-        this.studentId = studentId;
+        this.id = id;
     }
+
+    /**
+     * Returns the role of the user as a String.
+     *
+     * @return a String representing the role of the user, which is "Student"
+     */
     public String getRole() {
-        return "Student";
+        return Constant.STUDENT;
     }
 }

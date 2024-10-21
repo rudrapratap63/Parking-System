@@ -4,11 +4,12 @@ Contributors -> Ritika Suman
  */
 abstract class Vehicle{
     String id ;
+
+    /**
+     * Constructs a Vehicle with the specified identifier.
+     * @param id the identifier of the vehicle
+     */
     Vehicle(String id){
         this.id = id;
     }
-    Vehicle(){
-        this.id = null;
-    }
-
 }
